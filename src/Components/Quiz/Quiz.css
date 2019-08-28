@@ -1,0 +1,154 @@
+.overlay {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #f4f5f7;
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  width: 100%;
+  background-color: #f4f5f7;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  width: 768px;
+  z-index: 25;
+}
+
+@media (min-width: 768px) {
+  .overlay {
+    align-items: center;
+  }
+}
+
+.context-tool-bar {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  background: white;
+  overflow-x: scroll;
+  padding-bottom: 24px;
+}
+
+.explanation {
+  background: #eee;
+  padding: 16px 8px;
+  border-left: 3px solid var(--color-primary);
+}
+
+.main-header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-bar {
+  position: relative;
+  z-index: 4;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  height: 56px;
+}
+
+.nav-bar .icon {
+  font-size: 24px;
+  padding: 8px;
+}
+
+.nav-bar .title {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.active {
+  transform: translate3d(-250px, 0px, 0px);
+  visibility: visible;
+}
+
+.main-nav ul {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+.main-nav ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 600;
+}
+
+.main-nav ul li a :hover {
+  text-decoration: none;
+  color: rgb(103, 58, 183);
+}
+
+.main-nav ul li {
+  padding: 0 16px;
+  line-height: 48px;
+  height: 48px;
+}
+
+.main-nav ul li:hover {
+  background: rgba(103, 58, 183, 0.08);
+  color: rgb(103, 58, 183);
+}
+
+.main-nav ul li:hover a {
+  color: rgb(103, 58, 183);
+}
+
+.icon:hover {
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 50px;
+}
+
+.logo {
+  align-items: center;
+}
+
+.logo i {
+  font-size: 24px;
+  padding: 8px;
+}
+
+@media (min-width: 768px) {
+  .question .body-1 {
+    font-size: 24px;
+  }
+
+  .question .explanation,
+  .question .body-2 {
+    font-size: 18px;
+  }
+}
+
+.radio-button .correct::before {
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  ;
+}
+
+.radio-button .correct+span {
+  color: white;
+}
