@@ -1,0 +1,18 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "./var";
+
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "./elements";
+@import "./components";
+
+//Grid
+@import "../../node_modules/bootstrap/scss/grid";
+
+//Utilities
+@import "../../node_modules/bootstrap/scss/utilities/display";
+@import "../../node_modules/bootstrap/scss/utilities/flex";
+@import "../../node_modules/bootstrap/scss/utilities/spacing";
+@import "../../node_modules/bootstrap/scss/utilities/sizing";
+@import "../../node_modules/bootstrap/scss/utilities/text";
